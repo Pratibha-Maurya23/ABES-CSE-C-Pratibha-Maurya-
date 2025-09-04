@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment3</title>
+  <style>
+    .card{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 20px;
+      overflow: hidden;
+      width: 100%;
+      height: 500px;
+      background-color: aliceblue;
+      gap: 20px;
+    }
+    .card-items{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 26%;
+      padding: 10px;
+      background-color: white;
+    }
+    .card-img{
+      height: 270px ;
+      width: 98%;
+      border-radius: 8px;
+      padding: 5px;
+    }
+    .card-img img{
+      width: 100%;
+  height: 100%;
+  object-fit: cover;   /* makes image cover without distortion */
+  object-position: center;
+  margin-bottom: 5px;
+    }
+    .card-info h4{
+      font-size: 30px;
+      font-weight: 600;
+      color: black;
+      margin-bottom: 5px;
+    }
+    .card-info p{
+      color: gray;
+      font-size: medium;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-items">
+      <div class="card-img">
+        <img src="pizza.jpeg" alt="pizza" >
+      </div>
+      <div class="card-info">
+        <h4>Pizza</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat voluptatibus, illum iste quia numquam.</p>
+      </div>
+    </div>
+     <div class="card-items">
+      <div class="card-img">
+        <img src="burgur.jpeg" alt="burgur" height="150px">
+      </div>
+      <div class="card-info">
+        <h4>Burgur</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat voluptatibus, illum iste quia numquam.</p>
+      </div>
+    </div>
+     <div class="card-items">
+      <div class="card-img">
+        <img src="dosa.jpeg" alt="dosa" height="150px">
+      </div>
+      <div class="card-info">
+        <h4>Dosa</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat voluptatibus, illum iste quia numquam.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
