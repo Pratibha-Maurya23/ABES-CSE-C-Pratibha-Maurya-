@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #app{
+            text-align: center;
+        }
+        div{
+            border: 2px solid coral;
+            background-color: lightblue;
+            width: 400px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <p>Counter app</p>
+        <p id="val">Value:  </p>
+        <button id="+" onclick="increment()">+</button>
+        <button id="-" onclick="decrement()">-</button>
+    </div>
+    <div >
+        <img id="img" src="https://images.pexels.com/photos/1421903/pexels-photo-1421903.jpeg?cs=srgb&dl=pexels-eberhardgross-1421903.jpg&fm=jpg" alt="" height="100px" width="100%">
+        <button onclick="img2()">click here</button>
+    </div>
+    <div >
+        <img id="img3" src="https://images.pexels.com/photos/1421903/pexels-photo-1421903.jpeg?cs=srgb&dl=pexels-eberhardgross-1421903.jpg&fm=jpg" alt="" height="100px" width="100%">
+        <img id="img4" src="https://images.pexels.com/photos/2486168/pexels-photo-2486168.jpeg?cs=srgb&dl=pexels-rpnickson-2486168.jpg&fm=jpg" alt="" height="0px" width="0%">
+
+        <button onclick="img3()">click here</button>
+    </div>
+    <script>
+        var x =0;
+        const counterDisplay = document.getElementById("val");
+        const dec = document.getElementById("+");
+        const inc = document.getElementById("-");
+        
+        var update = ()=>{
+            counterDisplay.textContent = x;
+        }
+        // dec.addEventListener("click",)
+        function img2(){
+            document.getElementById("img").style.display="none";
+        }
+        function img3(){
+            document.getElementById("img4").style.cssText="width:100% ,height:200px";
+            
+        }
+
+
+
+    
+    </script>
+</body>
+</html>
