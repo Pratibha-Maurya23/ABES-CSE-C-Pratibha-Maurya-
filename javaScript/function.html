@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hii{
+            border: 5px solid coral;
+            height: 200px;
+            width: 200px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="hii">
+        <button onclick="msg()">click here</button>
+        <p id="msg"></p>
+    </div>
+
+    <script>
+        function hi(){
+            document.write("Hello world ");
+        }
+        hi();
+        const add =()=>{
+            var x =55, y =99;
+            console.log(x+y);
+            document.write("Addition of two numbers: "+(x+y));
+        }
+        const sub = ()=>{
+            var x=432, y=21;
+            document.writeln("Substraction of two numbers: "+(x-y));
+        }
+        add();
+        sub();
+        function msg(){
+            document.getElementById("msg").innerHTML = "<h2>How are you?</h2>";
+        }
+
+    </script>
+</body>
+</html>
