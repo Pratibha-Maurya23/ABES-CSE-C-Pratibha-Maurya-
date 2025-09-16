@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-Box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 20px;
+  padding: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(216, 213, 213);
+}
+.matched, .unmatched{
+  background-color: white;
+  min-height: 250px;
+  width: 48%;
+  border-top: 8px solid green;
+  box-shadow: 2px solid rgb(96, 94, 94);
+  padding: 10px;
+  border-radius: 8px;
+}
+ span{
+  font-size: large;
+  font-weight: 600;
+}
+.subSection{
+  font-size: medium;
+  font-weight: 500;
+}
+.listOfStudent{
+  padding-left: 50px;
+}
+.unmatched{
+  border-top: 8px solid red;
+}
+.matched ul, .unmatched ul{
+  list-style: none;
+}
+h2{
+  text-align: center;
+  color: brown;
+  text-decoration: underline;
+  font-weight: 500;
+}
