@@ -7,7 +7,7 @@ const students = [
     year:3
   },
   {
-    Name:"Queen Aligabeth",
+    Name:"Queen Alizabeth",
     rollno:199,
     course:"Btech",
     branch:"CS",
@@ -56,7 +56,7 @@ students.forEach(element => {
       count1++;
   }else{
        unmatched.innerHTML += `
-        <span>Student ${count1}</span>
+        <span>Student ${count2}</span>
         <ul class="listOfStudent">
         <li><span class="subSection">Name: </span>${element.Name} </li>
         <li><span class="subSection">RollNo:</span> ${element.rollno} </li>

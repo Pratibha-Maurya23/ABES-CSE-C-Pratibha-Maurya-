@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      padding: 20px;
+      margin: 50px;
+      width: 500px;
+      height: 400px;
+      background-color: rgb(173, 168, 168);
+    }
+    .box{
+      display: flex;
+      gap: 50px;
+      width: 46%;
+      border: 2px solid blue;
+      padding: 10px;
+    }
+    #profileImg{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+    <form action="">
+      <input type="text" placeholder="your name" id="name">
+      <input type="text" placeholder="Branch name" id="branch">
+      <input type="text" placeholder="Language 1" id="lang_1">
+      <input type="text" placeholder="Language 2" id="lang_2">
+      <input type="text" placeholder="Language 3" id="lang_3">
+      <button onclick="resume()">Click</button>
+    </form>
+  <div class="container">
+    <div class="box">
+      <img src="Lg.webp" alt="" id="profileImg">
+      <div>
+        <h3 id="personName"></h3>
+      <h5 id="branchName"></h5>
+      </div>
+    </div>
+    <h5>Know Language</h5>
+    <p id="lang1"></p>
+    <p id="lang2"></p>
+    <p id="lang3"></p>
+  </div>
+  <script>
+   function resume(){
+    let name = document.getElementById("name").value;
+    document.getElementById("personName").innerText = name;
+    let branch = document.getElementById("branch").value;
+    document.getElementById("branchName").innerText = branch;
+
+    let lang1 = document.getElementById("lang_1").value;
+    let lang2 = document.getElementById("lang_2").value;
+    let lang3 = document.getElementById("lang_3").value;
+    
+    document.getElementById("lang1").innerText = lang1;
+    document.getElementById("lang2").innerText = lang2;
+    document.getElementById("lang3").innerText = lang3;
+   }
+  </script>
+</body>
+</html>

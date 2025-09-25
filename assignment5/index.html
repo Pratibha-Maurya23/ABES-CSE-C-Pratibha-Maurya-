@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment5</title>
+</head>
+<body>
+  <script>
+    var num1 = prompt("Enter first number ");
+    var num2 = prompt("Enter Second number ");
+    var even = [];
+    var odd = [];
+    for (let i = 1; i <= 10; i++) {
+      const el1 = num1*i;
+      const el2 = num2*i;
+      document.write(el1+" "+el2+ "<br>");
+      el1%2==0?even.push(el1):odd.push(el1);
+      el2%2==0?even.push(el2):odd.push(el2); 
+    }
+    document.write("<br>Even Numbers : ");
+    for(let i = 0 ; i < even.length ; i++){
+      document.write(even[i]+" ");
+    }
+     document.write("<br>Odd Numbers : ");
+    for(let i = 0 ; i < odd.length ; i++){
+      document.write(odd[i]+" ");
+    }
+    
+  </script>
+</body>
+</html>
