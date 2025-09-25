@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function getData(dataid,getNextData){
+      setTimeout(()=>{
+        console.log("data",dataid);
+        if(getNextData){
+          getNextData();
+        }
+      },2000);
+    }
+    // getData(1);
+    // getData(2);
+    // getData(3);
+
+    getData(1,()=>{
+      getData(2,()=>{
+        getData(3,()=>{
+          getData(4)
+        })
+      })
+    })
+    // function sum (a, b){
+    //   console.log(a+b);
+    // }
+    // function cal(a,b,sumcallback){
+    //   sumcallback(a,b)
+    // }
+    // cal(10,20,sum);
+  </script>
+</body>
+</html>
