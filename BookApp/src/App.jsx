@@ -1,25 +1,29 @@
 import './App.css'
-import Book from './components/Book'
+import { Routes, Route } from 'react-router-dom'
+import Home from './components/Home'
+import Login from './components/Login'
+import Register from './components/Register'
+import Wishlist from './components/Wishlist'
+import Cart from './components/Cart'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
+
+
   return (
-    <>
-      <Navbar />
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 py-12 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-bold text-gray-800 text-center mb-8">
-            Book Store
-          </h1>
-          <div className="flex flex-wrap justify-center items-start gap-8">
-            <Book title="Physics" price="600" img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBGrvivmAtwpuVN7BKchYTp1Ps0WL_ywr2hQ&s"/>
-            <Book title="Math" price="600" img="https://img.freepik.com/free-vector/maths-realistic-chalkboard-background_23-2148159115.jpg?semt=ais_hybrid&w=740&q=80"/>
-            <Book title="Chemeistry" price="600" img="https://i.ytimg.com/vi/5iTOphGnCtg/maxresdefault.jpg"/>
-          </div>
-        </div>
-      </div>
+    <>  <Navbar   />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/wishlist" element={<Wishlist />} />
+      <Route path="/cart" element={<Cart />} />
+    </Routes>
+    <Footer />
     </>
   )
 }
 
-export default App
+export default App;
+
